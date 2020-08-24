@@ -11,12 +11,15 @@
 char* readline();
 
 // Complete the countingValleys function below.
-int countingValleys(int n, char* s) {
+int countingValleys(int n, char* s)
+{
 int valley=0;
 int level=0;
 for(int i=0;i<n;i++)
+
 {
     if (s[i] == 'U')
+    
     {
         if (level == -1)
         valley++;
@@ -28,6 +31,7 @@ for(int i=0;i<n;i++)
     }
 }
 return valley;
+
 }
 
 
